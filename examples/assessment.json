@@ -1,0 +1,35 @@
+{
+  "company": {
+    "id": "printer-demo",
+    "name": "华彩印刷有限公司",
+    "unifiedSocialCreditCode": "91310000DEMO000001",
+    "address": "上海市示例路 18 号",
+    "safetyManager": "陈安"
+  },
+  "risks": [
+    {
+      "area": "机台",
+      "score": 82,
+      "risk": "设备防护罩缺失",
+      "evidencePath": "examples/evidence/machine.json"
+    },
+    {
+      "area": "油墨区",
+      "score": 75,
+      "risk": "溶剂容器未设置静电接地",
+      "evidencePath": "examples/evidence/ink.json"
+    },
+    {
+      "area": "纸库",
+      "score": 46,
+      "risk": "纸垛间距不足",
+      "evidencePath": "examples/evidence/paper.json"
+    },
+    {
+      "area": "成品区",
+      "score": 28,
+      "risk": "疏散标识褪色",
+      "evidencePath": "examples/evidence/finished.json"
+    }
+  ]
+}
