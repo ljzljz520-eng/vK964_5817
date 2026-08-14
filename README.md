@@ -24,6 +24,4 @@ go run ./cmd/printshop-safety -input examples/assessment.json
 go test -count=1 ./...
 ```
 
-当前项目包含一个按缺陷契约注入的证据读取异常场景，因此对应的业务回归测试会稳定失败，用于复现不完整整改清单被发布的问题。其余业务链路测试应通过。
-
 项目仅使用 Go 标准库，可在 `CGO_ENABLED=0` 环境中构建。
