@@ -55,7 +55,7 @@ func (a *RiskEvidenceAggregator) Summarize(risks []RiskAssessment) ([]HighRiskIt
 
 		evidence, err := a.reader.Read(risk.EvidencePath)
 		if err != nil {
-			continue
+			return nil, fmt.Errorf("汇总%s高风险证据: %w", risk.Area, err)
 		}
 
 		items = append(items, HighRiskItem{
